@@ -311,7 +311,7 @@ void setup() {
   server.on("/api/gps", HTTP_GET, sendGPSData);
   server.begin();
 }
-
+// MAIN LOOPER
 void loop() {
   readGPS();
   server.handleClient();
